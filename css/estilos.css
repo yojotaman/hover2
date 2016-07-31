@@ -1,3 +1,85 @@
 body {
 	background: lightblue;
+	margin: 0;
+}
+.cvanderland {
+	width: 1024px;
+	height: 243px;
+	background-image: url('../images/fondo.png');	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: 0 auto;
+}
+.container {
+	height: 100vh;
+	width: 100vw;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+
+}
+
+.cvander {
+	/*background: green;*/
+	width: 166px;
+	height: 171px;
+	position: absolute;
+	left: 0px;
+	bottom: 0;
+	overflow: hidden;
+	transition: .3s;
+
+}
+.cvander:hover {
+	/*background: blue;*/
+}
+.cvander:hover .cvander-cabeza {
+	/*border: 10px solid red;*/
+	animation: .5s cvander infinite;
+}
+.cvander:hover .cvander-tablet {
+	transform: rotate(-7deg);
+}
+
+.cvander-cuerpo {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.cvander-cabeza {
+	position: absolute;
+	left: 0;
+	top: 0;
+	transition: .3s;
+}
+.cvander-tablet {
+	position: absolute;
+	left: 0;
+	bottom: -20px;
+	transition: .3s;
+}
+
+@keyframes cvander {
+	/*0% -50%- 100%*/
+	/*from to*/
+	/*from {
+		border: 1px solid red;
+	}
+	to {
+		transform: translateY(5px);
+		
+	}*/
+	0% {
+
+	}
+	50% {
+		transform: translateY(5px) rotate(2deg);
+		: 2deg;
+	}
+
+	100% {
+
+	}
+
 }
